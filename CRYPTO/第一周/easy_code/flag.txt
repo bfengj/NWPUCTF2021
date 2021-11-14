@@ -1,0 +1,4 @@
+base64-base58-base16-base32-base64
+
+
+flag{good_job!}
