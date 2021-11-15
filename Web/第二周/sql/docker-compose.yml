@@ -1,0 +1,14 @@
+# QWB 2019 SuperSqli
+
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: ctftraining/qwb_2019_supersqli
+    restart: always
+    ports:
+      - "127.0.0.1:28302:80"
+    environment:
+      - FLAG=flag{11f4fa68-4e90-4074-8df2-cc75ff291cc5}

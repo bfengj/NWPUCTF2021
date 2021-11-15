@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./template/static/css/bootstrap.css" rel="stylesheet">
+    <script src="./template/static/js/jquery.js"></script>
+    <script src="./template/static/js/popper.js"></script>
+    <script src="./template/static/js/bootstrap.js"></script>
+    <!-- <script src="../static/js/console.js"></script> -->
+    <script src="./template/static/js/ui-console.js"></script>
+    <link rel="stylesheet" href="./template/static/css/ext-console.css">
+    <title>Console</title>
+    <style>
+        body {
+            font-family: '等线';
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <nav class="navbar sticky-top p-0">
+        <div class="container-xl">
+            <div class="m-2 navbar-brand">
+            </div>
+            <div>
+                <a href="../" class="text-decoration-none btn mr-3">首页</a>
+                <a href="./changepass.php" class="text-decoration-none btn mr-3">更改密码</a>
+                <a href="./admin.php?logout=1"><button class="btn btn-outline-dark">登出</button></a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-xl my-5 p-5 shadow rounded" id="main-container">
+        <div class="row border-bottom pb-3">
+            <div class="col-4">
+                <img src="./template/static/img/person.jpg" class="rounded float-left img-thumbnail" width="140px"
+                    height="140px">
+                <br>
+
+            </div>
+            <div class="col-8">
+                <dl class="row mt-3" style="font-size: 20px; font-family: '等线';">
+                    <dt class="col-sm-3">用户名</dt>
+                    <dd class="col-sm-9">admin</dd>
+                    <dt class="col-sm-3">邮箱</dt>
+                    <dd class="col-sm-9">---</dd>
+                    <dt class="col-sm-3">账户状态</dt>
+                    <dd class="col-sm-9">正常启用</dd>
+                </dl>
+            </div>
+        </div>
+        <a href="upload.php" style="position: relative;top: -21px">更换头像</a>
+        <div class="display-4">进度</div>
+        <div class="card mt-3">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-4">本月财务速览</div>
+                    <div class="col-8">
+                        <div class="progress mt-1">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" id="bar-data"
+                                style="width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title mb-5 mt-3">盈利20%</h5>
+                <dl class="row ml-5" style="font-size: 20px;" id="data-info"></dl>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-4">人员工资发放</div>
+                    <div class="col-8">
+                        <div class="progress mt-1">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" id="bar-model"
+                                style="width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title mb-5 mt-3">已完全发放</h5>
+<!--                hint:if you were here only though "wan neng mi ma",you may miss something important-->
+                    <!-- hint:table name:user_table -->
+                <p class="ml-5" style="font-size: 20px; font-family: '等线';" id="model-info"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

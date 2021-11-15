@@ -1,0 +1,24 @@
+body {
+    font-family: '等线';
+    background-image: url("../img/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 1080px;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.on-top {
+    background-color: rgba(210, 210, 210, 0.75);
+}
+
+#main-container {
+    background-color: rgba(255, 255, 255, 0.75);
+}

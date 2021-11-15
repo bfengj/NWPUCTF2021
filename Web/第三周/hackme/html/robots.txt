@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /index.php~
+Disallow: /View.class.php~
+Disallow: functions.php~
+//hint:login.php and index.php render html in the same way
